@@ -8,10 +8,17 @@
 </head>
 <body>
     <div id="content">
+        <form>
+            min support <input type="number" id="minSupport">
+            <p></p>
+            transactions <input type="file" id="transactions" accept=".csv">
+        </form>
         <p id="pairs"></p>
         <p id="support"></p>
         <p id="confidence"></p>
     </div>
+    <script src="node_modules/array2d/Array2D.js"></script>
+    <script src="node_modules/papaparse/papaparse.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-combinatorics@0.5.3/combinatorics.js"></script>
     <script src="app.js"></script>
 </body>
